@@ -1,0 +1,13 @@
+<div id="osd" class="osd" style="width: 100vw; height: 100vh;"></div>
+<script type="text/javascript">
+  var viewer = OpenSeadragon({
+    id: 'osd',
+    prefixUrl: '/zoom/icons/',
+    tileSources: {{{sources}}},
+    showNavigator: true,
+    showFullPageControl: false,
+    sequenceMode: true,
+    showReferenceStrip: true
+  });
+  viewer.setFullPage(true);
+</script>
